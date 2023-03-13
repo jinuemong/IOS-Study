@@ -5,5 +5,8 @@
         <page name='First'/>
         <page name='Function'/>
         <page name='Conditional'/>
+        <page name='Loop'/>
+        <page name='Optional'/>
+        <page name='Structure&amp;Class'/>
     </pages>
 </playground>
