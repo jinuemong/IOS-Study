@@ -18,5 +18,7 @@
         <page name='Extension'/>
         <page name='Enumeration'/>
         <page name='OptionalChaining'/>
+        <page name='TryAndCatch'/>
+        <page name='Closure'/>
     </pages>
 </playground>
