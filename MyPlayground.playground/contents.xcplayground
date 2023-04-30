@@ -8,5 +8,15 @@
         <page name='Loop'/>
         <page name='Optional'/>
         <page name='Structure&amp;Class'/>
+        <page name='Initialization'/>
+        <page name='Properties'/>
+        <page name='ClassAndStruct'/>
+        <page name='Inheritance'/>
+        <page name='TypeCasting'/>
+        <page name='AssertAndGuard'/>
+        <page name='Protocol'/>
+        <page name='Extension'/>
+        <page name='Enumeration'/>
+        <page name='OptionalChaining'/>
     </pages>
 </playground>
