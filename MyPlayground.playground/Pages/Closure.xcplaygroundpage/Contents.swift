@@ -111,7 +111,7 @@ doSomethings4(closure:{
     return $0+$1+$2
 })
 
-// 생략 3. 리턴 타입 생략 -> 단일 리턴인 경우
+// 생략 3. 리턴 생략 -> 단일 리턴인 경우
 // print() 문을 추가하면 에러 발생 -> return 추가해야 함
 doSomethings4(closure:{
     $0+$1+$2
