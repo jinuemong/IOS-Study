@@ -35,11 +35,12 @@ class ViewController: UIViewController {
             return
         }
         
+        // 풀 스크린으로 변환 -> present 이전에 실행해야 함
+        viewController.modalPresentationStyle = .fullScreen
+        
         // present 메서드에 인스턴스한 Controller를 전달
         self.present(viewController, animated: true, completion: nil)
         
-        // 풀 스크린으로 변환
-        viewController.modalPresentationStyle = .fullScreen
     }
 }
 

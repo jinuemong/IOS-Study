@@ -12,7 +12,7 @@ class SuguePresentViewController: UIViewController {
         // 아래 메서드 호출로 Back Button 클릭 시
         // 이전 화면으로 전환하게 된다.
         
-        self.presentedViewController?
+        self.presentingViewController?
             .dismiss(animated: true, completion: nil)
             
     }
