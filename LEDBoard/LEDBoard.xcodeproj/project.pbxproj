@@ -13,6 +13,7 @@
 		CBB977342A0A323800AA2DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB977322A0A323800AA2DED /* Main.storyboard */; };
 		CBB977362A0A323900AA2DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB977352A0A323900AA2DED /* Assets.xcassets */; };
 		CBB977392A0A323900AA2DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB977372A0A323900AA2DED /* LaunchScreen.storyboard */; };
+		CBF923D02A0A81DC007B516A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF923CF2A0A81DC007B516A /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CBB977352A0A323900AA2DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB977382A0A323900AA2DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB9773A2A0A323900AA2DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF923CF2A0A81DC007B516A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CBB9772B2A0A323800AA2DED /* LEDBoard */ = {
 			isa = PBXGroup;
 			children = (
+				CBF923CF2A0A81DC007B516A /* SettingViewController.swift */,
 				CBB9772C2A0A323800AA2DED /* AppDelegate.swift */,
 				CBB9772E2A0A323800AA2DED /* SceneDelegate.swift */,
 				CBB977302A0A323800AA2DED /* ViewController.swift */,
@@ -141,6 +144,7 @@
 				CBB977312A0A323800AA2DED /* ViewController.swift in Sources */,
 				CBB9772D2A0A323800AA2DED /* AppDelegate.swift in Sources */,
 				CBB9772F2A0A323800AA2DED /* SceneDelegate.swift in Sources */,
+				CBF923D02A0A81DC007B516A /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

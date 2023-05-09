@@ -30,7 +30,7 @@
         <scene sceneID="A0A-gB-o3E">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qod-I0-WjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="Xg5-Gi-lpV" sceneMemberID="viewController">
+                <viewController id="Xg5-Gi-lpV" customClass="SettingViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9wn-D2-ayR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,16 +73,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="yellow_img"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="8qD-9O-Pb7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-Wx-hGc">
                                                 <rect key="frame" x="70" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="purple_img"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="ng1-9a-RQy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnq-cE-IPy">
                                                 <rect key="frame" x="140" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="green_img"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="nqR-Te-ILf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -107,16 +116,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="black_img"/>
+                                                <connections>
+                                                    <action selector="tabBackGroundColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="wgj-ue-Ib6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-iK-0vO">
                                                 <rect key="frame" x="70" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="blue_img"/>
+                                                <connections>
+                                                    <action selector="tabBackGroundColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="97P-ld-7Ey"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejf-sC-IjY">
                                                 <rect key="frame" x="140" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="orange_img"/>
+                                                <connections>
+                                                    <action selector="tabBackGroundColorButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="Is9-N0-6vo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -129,6 +147,9 @@
                                 <rect key="frame" x="183" y="438.5" width="48.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="Xg5-Gi-lpV" eventType="touchUpInside" id="QZQ-le-IXb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CEN-8L-UXE"/>
@@ -148,6 +169,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="cOP-rk-VfL"/>
+                    <connections>
+                        <outlet property="bButton" destination="vKp-5t-Ge8" id="lC6-mC-3jc"/>
+                        <outlet property="blueButton" destination="NIM-iK-0vO" id="zsI-Jp-s4t"/>
+                        <outlet property="gButton" destination="vnq-cE-IPy" id="5nq-oh-Gj3"/>
+                        <outlet property="oButton" destination="ejf-sC-IjY" id="8pc-iQ-i0e"/>
+                        <outlet property="pButton" destination="yhQ-Wx-hGc" id="N8N-2P-mpq"/>
+                        <outlet property="textField" destination="Oju-gR-pnu" id="qwR-lV-hed"/>
+                        <outlet property="yButton" destination="koh-Tu-cqf" id="GKN-BQ-LEP"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="330" y="-395"/>
@@ -183,6 +213,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentLabel" destination="HcN-mR-IUz" id="YNx-EC-rXc"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-352" y="-395"/>
