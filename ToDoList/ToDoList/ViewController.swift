@@ -128,7 +128,7 @@ extension ViewController: UITableViewDataSource{
         let task  = tasks[sourceIndexPath.row]
         tasks.remove(at: sourceIndexPath.row) //기존 값 삭제
         tasks.insert(task, at: destinationIndexPath.row) //이동할 곳으로 생성
-        self.tasks = tasks // 재정렬된 배열로 전환 
+        self.tasks = tasks // 재정렬된 배열로 전환
     }
     // 앱이 재실행되면 데이터가 리셋되는 현상 방지
     // 앱 내부에 데이터 저장 : userDefault
